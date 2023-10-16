@@ -17,6 +17,7 @@ public class InsertCustomerImpl implements InsertCustomer {
     @Autowired
     private CustomerEntityMapper customerEntityMapper;
 
+
     @Override
     public void insert(Customer customer) {
         var customerEntity =  customerEntityMapper.toCustomerEntity(customer);
